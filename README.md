@@ -6,7 +6,7 @@ Public forum to create own ideas, to browse other user ideas, to poll on other i
 
 Contributors
 ===============
-*******Ramesh Polishetti.*********
+*******Ramesh Polishetti.**********
 **Venkata Saikiran Kokku.*********
 *******Pavan Kumar Bakku.*********
 *********Srikanth Guntha.*********
