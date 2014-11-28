@@ -1,12 +1,12 @@
 {
-  "name": "mean-stack-relational",
-  "description": "M*EAN - A Modern Stack: MySQL, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
+  "name": "Nisumm Innovator",
+  "description": "A forum web app - To create ideas, browser ideas, vote for ideas",
   "version": "0.1.0",
   "private": false,
-  "author": "Jeff Potter",
+  "author": "Ramesh Polishetti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpotts18/mean-stack-relational.git"
+    "url": "https://github.com/rpoli/NisumInnovator"
   },
   "engines": {
     "node": "0.10.x",
