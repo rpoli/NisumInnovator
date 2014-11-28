@@ -1,3 +1,13 @@
+
+var utils = require("./app/utils/switcher")
+var feature = require('./config/featureBoard');
+
+
+/*Setup console plugin -- Widget module*/
+var logger = require('tracer').console();
+logger = feature.tracer? logger: console;
+
+
 /**
  * Module dependencies.
  */
@@ -10,9 +20,8 @@ var fs          = require('fs');
  */
 
 // Load Configurations
-
-var env             = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config          = require('./config/config');
+var env             = process.env.NODE_ENV = process.env.NODE_ENV || config.currentEnv;
 var auth            = require('./config/middlewares/authorization');
 var db              = require('./config/sequelize');
 var passport        = require('./config/passport');
@@ -28,7 +37,7 @@ require('./config/routes').init(app, passport, auth);
 //Start the app by listening on <port>
 var port = process.env.PORT || config.port;
 app.listen(port);
-console.log('Express app started on port ' + port);
+logger.log('Express app started on port ' + port);
 
 //expose app
 exports = module.exports = app;
