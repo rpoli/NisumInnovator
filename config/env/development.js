@@ -2,7 +2,7 @@ module.exports = {
     // This is your MYSQL Database configuration
     db: {
         name: "nisuminnovator",
-        password: "root",
+        password: "",
         username: "root"
     },
     app: {
