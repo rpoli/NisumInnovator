@@ -1,5 +1,4 @@
 /************Main app initiator***********/
-
 var utils = require( "./app/utils/utils" );
 var feature = require( './config/featureSwitch' );
 var _ = require( "lodash" ); // Utility library
@@ -19,6 +18,9 @@ if ( _.isEmpty( pathConfig ) ) {
 
 var express = require( 'express' );
 var fs = require( 'fs' );
+var pLogger = require( pathConfig.logger )( "product", "ALL" );
+var uLogger = require( pathConfig.logger )( "user", "ALL" );
+
 
 /********** Load Configurations*******/
 

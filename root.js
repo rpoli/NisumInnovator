@@ -36,6 +36,7 @@ var configPaths = {
     routes: "config/routes",
     utils: "app/utils/utils",
     featureSwitch: "config/featureSwitch",
+    logger: "app/utils/logger"
 };
 
 
