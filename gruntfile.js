@@ -227,53 +227,12 @@ module.exports = function( grunt ) {
             "git-pre-commit": {
                 src: [ "src/**/*.js" ],
                 options: {
-                    mode: "VERIFY_ONLY"
+                    mode: "VERIFY_ONLY",
+                    config: "config/gruntConfig/gruntBeautfier.json"
                 }
             },
             options: {
-                //config: "path/to/configFile",
-                html: {
-                    allowedFileExtensions: [ "htm", "html", "xhtml", "shtml", "xml", "svg" ],
-                    braceStyle: "collapse",
-                    endWithNewline: false,
-                    indentChar: " ",
-                    indentHandlebars: false,
-                    indentInnerHtml: true,
-                    indentScripts: "keep",
-                    indentSize: 4,
-                    maxPreserveNewlines: 2,
-                    preserveNewlines: true,
-                    unformatted: [ "a", "span", "img", "code", "pre", "sub", "sup", "em", "strong", "b", "i", "u", "strike", "big", "small", "pre", "h1", "h2", "h3", "h4", "h5", "h6" ],
-                    wrapLineLength: 0,
-                    removeExtraline: true
-                },
-                css: {
-                    allowedFileExtensions: [ "css", "scss", "sass", "less" ],
-                    endWithNewline: false,
-                    indentChar: " ",
-                    indentSize: 4,
-                    selectorSeparator: " ",
-                    selectorSeparatorNewline: false
-                },
-                js: {
-                    braceStyle: "collapse",
-                    breakChainedMethods: false,
-                    e4x: false,
-                    evalCode: false,
-                    indentChar: " ",
-                    indentLevel: 0,
-                    indentSize: 4,
-                    indentWithTabs: false,
-                    jslintHappy: false,
-                    keepArrayIndentation: false,
-                    keepFunctionIndentation: false,
-                    maxPreserveNewlines: 10,
-                    preserveNewlines: true,
-                    spaceBeforeConditional: true,
-                    spaceInParen: true,
-                    unescapeStrings: false,
-                    wrapLineLength: 0
-                }
+                config: "config/gruntConfig/gruntBeautfier.json"
             }
         },
 
